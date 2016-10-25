@@ -37,7 +37,7 @@ Edit the default values in the schema for phpIPAM class
 ## Requirements
 
 - The description of your Subnet in phpIPAM must match  the vlan value in manageIQ provisioning variable (see below)
-- Do not have duplicate Subnet description in ManageIQ
+- Do not have duplicate Subnet descriptions in ManageIQ
 
 The logic this follows is:
 - Get all sections in phpIPAM
