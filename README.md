@@ -20,7 +20,7 @@ In PHPIPAM take the following steps:
 
 2. Enable API (Administration>phpIPAM settings>Feature Settings>API)
 
-3. Create an API key (Administration>API) for either SSL or none (crypt does not work with this module)
+3. Create an API key (Administration>API) for either SSL or none (crypt does not work with this extension)
 
 Install the httparty ruby gem on the manageIQ server
 
