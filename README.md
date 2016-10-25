@@ -1,26 +1,20 @@
-# ManageIQ
-# PHPIPAM
-# miq-phpipam
-
-
-
-# PHPIPAM Module for ManageIQ
+# phpIPAM Extension for ManageIQ
 
 ## Information
-This is tested against PHPIPAM 1.2 and ManageIQ Darga using self-service provisioning on VMware
+This is tested against phpIPAM 1.2 and ManageIQ Darga using self-service provisioning on VMware
 
-
+It doesn't require any patches to phpIPAM code
 
 
 ## Prereqs
 
-In PHPIPAM take the following steps:
+In phpIPAM take the following steps:
 
-1. Create a user and password
+1. Create a user with admin permissions and a password 
 
 2. Enable API (Administration>phpIPAM settings>Feature Settings>API)
 
-3. Create an API key (Administration>API) for either SSL or none (crypt does not work with this extension)
+3. Create an API key (Administration>API) with either SSL or none as the App security (crypt does not work with this extension)
 
 Install the httparty ruby gem on the manageIQ server
 
@@ -32,7 +26,7 @@ gem install httparty
 
 After importing the extension:
 
-Edit the default values in the schema for PHPIPAM class
+Edit the default values in the schema for phpIPAM class
 
 - url should be set to the URL to access your phpipam API. If you access your phpipam install att https://server your url will be https://server/aip/ Include the trailing slash
 - user should be set to the user created in phpIPAM
